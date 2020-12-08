@@ -80,6 +80,13 @@ You can listen to all [Splide events](https://splidejs.com/events/) through the 
 ```
 Note that the first argument is the splide instance, meaning original arguments are shifted by one.
 
+## Controls slots
+this is a special build; added 2 control slots for easly modification the controls location:
+```
+<slot name="controlsTop"></slot>
+<slot name="controlsBottom"></slot>
+```
+
 ## Examples
 Here is a small example:
 ```javascript
@@ -98,7 +105,7 @@ Here is a small example:
 </template>
 
 <script>
-  export default { 
+  export default {
     data() {
       return {
         options: {
@@ -119,5 +126,5 @@ More examples:
 * [Videos](https://github.com/Splidejs/vue-splide/blob/master/examples/src/js/examples/components/VideoExample.vue)
 
 ## License
-Vue Splide and Splide are released under the MIT license.  
+Vue Splide and Splide are released under the MIT license.
 © 2020 Naotoshi Fujita

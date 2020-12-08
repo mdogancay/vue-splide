@@ -1,5 +1,7 @@
 <template>
   <div class="splide">
+    <slot name="controlsTop"></slot>
+
     <div class="splide__slider" v-if="hasSliderWrapper">
       <div class="splide__track">
         <ul class="splide__list">
@@ -14,7 +16,7 @@
       </ul>
     </div>
 
-    <slot name="controls"></slot>
+    <slot name="controlsBottom"></slot>
   </div>
 </template>
 
